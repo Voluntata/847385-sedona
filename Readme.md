@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Liudmyla Polchenko](https://up.htmlacademy.ru/htmlcss/23/user/847385).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
 
 ---
 
