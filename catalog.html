@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#">
+            <img src="img/logo.png" width="140" height="71" alt="CITY OF SEDONA">
+          </a>
+          </div>
+          <nav class="main-menu">
+            <ul>
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Фото и видео</a></li>
+              <li><a href="#">Карта штата</a></li>
+              <li><a href="#">Гостиницы</a></li>
+            </ul>
+          </nav>
+        </div>
+       </header>
+
+       <main>
+      <section class="filter">
+        <form class="infostructure" action="" method="post">
+          <p>Инфраструктура:</p>
+          <p>
+          <input type="checkbox" name="pool" value="" checked >
+          Бассейн
+        </p>
+          <p>
+          <input type="checkbox" name="parcking" value="" >
+          Парковка
+        </p>
+          <p>
+          <input type="checkbox" name="wifi" value="" >
+          Wi-Fi
+        </p>
+        </form>
+
+        <form class="housing-type" action="" method="post">
+          <p>Тип жилья:</p>
+          <p>
+          <input type="checkbox" name="hotel" value="" checked >
+          Гостиница
+        </p>
+          <p>
+          <input type="checkbox" name="motel" value="" checked  >
+          Мотель
+        </p>
+          <p>
+          <input type="checkbox" name="apartment" value="" checked  >
+          Апартаменты
+        </p>
+        </form>
+
+        <div class="price-selection">
+          <p>Стоимость в сутки (Р):</p>
+          <p>от 0 </p>
+            <p>до 3000</p>
+        </div>
+
+        <button type="button" name="show">Показать</button>
+      </section>
+<!-- Решила сделать таблицей, исправлю если так нельзя -->
+         <table class="hotel">
+           <tr>
+             <td class="hotel-img"> <img src="" alt="photo"> </td>
+             <td class="hotel-name"> <b> Amara Resort &amp; Spa</b></td>
+             <td></td>
+             <td class="hotel-stars"><img src="" alt="5 звезд"></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td class="hotel-type">Гостиница</td>
+             <td class="hotel-price">От 4000 Р.</td>
+             <td></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td class="btn more"> <a href="#">Подробнее</a> </td>
+             <td class="btn book"> <a href="#">Забронировать</a> </td>
+             <td class="hotel-rating"> Рейтинг: 9,2</td>
+           </tr>
+         </table>
+
+         <table class="hotel">
+           <tr>
+             <td class="hotel-img"> <img src="" alt="photo"> </td>
+             <td class="hotel-name"> <b>Desert Quail Inn</b> </td>
+             <td></td>
+             <td class="hotel-stars"><img src="" alt="3 звезды"></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td class="hotel-type">Мотель</td>
+             <td class="hotel-price">От 3000 Р.</td>
+             <td></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td class="btn more">Подробнее</td>
+             <td class="btn book">Забронировать</td>
+             <td class="hotel-rating">Рейтинг: 8,9</td>
+           </tr>
+         </table>
+
+         <table class="hotel">
+           <tr>
+             <td class="hotel-img"> <img src="" alt="photo"> </td>
+             <td class="hotel-name"> <b>Villas at Poco Diablo</b> </td>
+             <td></td>
+             <td class="hotel-stars"><img src="" alt="2 звезды"></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td class="hotel-type">Апартаменты</td>
+             <td class="hotel-price">От 2000 Р.</td>
+             <td></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td class="btn more">Подробнее</td>
+             <td class="btn book">Забронировать</td>
+             <td class="hotel-rating">Рейтинг: 9,2</td>
+           </tr>
+         </table>
+       </main>
+
+       <footer class="main-footer">
+         <div class="container">
+           <div class="footer-left">
+             <a href="#">#visitsedona</a>
+           </div>
+           <div class="footer-center">
+             <!-- тоже заворачивать в список? или не обязательно? -->
+             <div class="footer-social">
+               <a href="#" class="social-btn social-btn-tw">Twitter</a>
+               <a href="#" class="social-btn social-btn-fb">Facebook</a>
+               <a href="#" class="social-btn social-btn-ytb">YouTube</a>
+             </div>
+           </div>
+           <div class="footer-right">
+             <a href="#"> website by
+               <img src="" width="" height="" alt="htmlacademy">
+             </a>
+           </div>
+       </footer>
+     </body>
+   </html>
