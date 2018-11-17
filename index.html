@@ -35,10 +35,7 @@
   <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!  </h2>
   <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
  </div>
- <!-- По итогам лекции возник вопрос: с одной стороны, говорят не увлекаться списками, а с другой - все размечают списками.
-Как быть в этом случае? список или дивы?. То же самое по блоку features. И как понять что именно использовать?
-По семантике похоже на список, исправлю.
-и тогда -1- будет номером в списке и украсим его с помощью CSS? тут не знаю как поступить, оставлю  пока так. -->
+
     <section class="advantages">
       <!-- Нужен ли тогда section ? пока оставлю, если не буду испольщовать удалю.-->
       <div class="container">
@@ -97,41 +94,36 @@
         </section>
 
         <div class="container">
-        <strong>Заинтересовались?</strong>
+          <!-- заменила стронг на б , особого смысла эта фраза не несет? -->
+        <b>Заинтересовались?</b>
         <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
        </div>
 
-<!-- по этому пункту больше всего вопросов. Судя по лекции это не форма,но это же форма!
-могу ли использовать button в этом случае? или это кнопка, или ссылка?
-или это поп-ап, которыя я пока делать не должна?-->
+<!-- переделала баттон в а, так логичнее : нажимаешь на ссылку и открывается форма.-->
          <section class="order">
            <div class="container">
-           <button type="button" name="search-form">
-             ПОИСК ГОСТИНИЦЫ В седоне
-           </button>
+             <a href="#"> <strong> ПОИСК ГОСТИНИЦЫ В седоне</strong></a>
+<!-- заменила label на р, исправила ошибку -->
            <form class="search" action="" method="post">
-             <label> Дата заезда:
+             <p> Дата заезда:
                <input type="data" name="arrival" value="24 апреля 2017">
                <img src="img/calendar.png" alt="">
-             </label>
-             <br>
-             <label> Дата выезда:
-             <input type="data" name="departure" value="4 июля 2017">
-             <img src="img/calendar.png" alt="">
-           </label>
-           <br>
-           <label> Взрослые:
-           <input type="number" name="adults" value="2">
-         </label>
-         <label> Дети:
-         <input type="number" name="childs" value="0">
-       </label>
-       <br>
-       <input type="submit" name="search" value="Найти">
+             </p>
+             <p> Дата выезда:
+               <input type="data" name="departure" value="4 июля 2017">
+               <img src="img/calendar.png" alt="">
+              </p>
+              <p> Взрослые:
+                <input type="number" name="adults" value="2">
+              </p>
+              <p> Дети:
+                <input type="number" name="childs" value="0">
+              </p>
+              <input type="submit" name="search" value="Найти">
            </form>
          </div>
          </section>
-         </form>
+<!-- здесь должна быть карта, но я пока не имею ни малейшего понятия что это такое и с чем его едят -->
     </main>
 
 
@@ -141,12 +133,11 @@
           <a href="#">#visitsedona</a>
         </div>
         <div class="footer-center">
-          <!-- тоже заворачивать в список? или не обязательно? -->
-          <div class="footer-social">
-            <a href="#" class="social-btn social-btn-tw">Twitter</a>
-            <a href="#" class="social-btn social-btn-fb">Facebook</a>
-            <a href="#" class="social-btn social-btn-ytb">YouTube</a>
-          </div>
+          <ul class="footer-social">
+            <li><a href="#" class="social-btn social-btn-tw">Twitter</a></li>
+            <li><a href="#" class="social-btn social-btn-fb">Facebook</a></li>
+            <li><a href="#" class="social-btn social-btn-ytb">YouTube</a></li>
+          </ul>
         </div>
         <div class="footer-right">
           <a href="#"> website by
