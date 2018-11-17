@@ -26,8 +26,10 @@
        </header>
 
        <main>
-      <section class="filter">
+         <h1 class="visually-hidden">Выберите отель</h1>
+      <section class="filters">
         <form class="infostructure" action="" method="post">
+          <h2 class="visually-hidden">Фильтр по инфраструктуре</h2>
           <p>Инфраструктура:</p>
           <p>
           <input type="checkbox" name="pool" value="" checked >
@@ -44,9 +46,10 @@
         </form>
 
         <form class="housing-type" action="" method="post">
+          <h2 class="visually-hidden">Фильтр по типу жилья</h2>
           <p>Тип жилья:</p>
           <p>
-          <input type="checkbox" name="hotel" value="" checked >
+          <input type="checkbox" name="item" value="" checked >
           Гостиница
         </p>
           <p>
@@ -60,46 +63,48 @@
         </form>
 
         <div class="price-selection">
+            <h2 class="visually-hidden">Фильтр по стоимости</h2>
           <p>Стоимость в сутки (Р):</p>
           <p>от 0 </p>
             <p>до 3000</p>
         </div>
-
         <button type="button" name="show">Показать</button>
       </section>
-<!-- Решила сделать таблицей, исправлю если так нельзя -->
-         <section class="hotels">
-           <div class="holel">
-             <img class="hotel-img" src="" alt="photo">
-             <p class="hotel-name"> <b> Amara Resort &amp; Spa</b></p>
-             <p class="hotel-type">Гостиница</p>
-             <p class="hotel-price">От 4000 Р.</p>
-             <img class="hotel-stars" src="" alt="5 звезд">
-             <p class="hotel-rating"> Рейтинг: 8,5</p>
-             <a class="btn more" href="#">Подробнее</a>
-             <a class="btn book" href="#">Забронировать</a>
-           </div>
-           <div class="holel">
-             <img class="hotel-img" src="" alt="photo">
-             <p class="hotel-name"> <b> Desert Quail Inn</b></p>
-             <p class="hotel-type">Мотель</p>
-             <p class="hotel-price">От 3000 Р.</p>
-             <img class="hotel-stars" src="" alt="3 звезды">
-             <p class="hotel-rating"> Рейтинг: 8,9</p>
-             <a class="btn more" href="#">Подробнее</a>
-             <a class="btn book" href="#">Забронировать</a>
-           </div>
-           <div class="holel">
-             <img class="hotel-img" src="" alt="photo">
-             <p class="hotel-name"> <b> Villas at Poco Diablo</b></p>
-             <p class="hotel-type">Апартаменты</p>
-             <p class="hotel-price">От 2000 Р.</p>
-             <img class="hotel-stars" src="" alt="2 звезды">
-             <p class="hotel-rating"> Рейтинг: 9,2</p>
-             <a class="btn more" href="#">Подробнее</a>
-             <a class="btn book" href="#">Забронировать</a>
-           </div>
 
+         <section class="items-list">
+             <h2 class="visually-hidden">Подходящие отели</h2>
+           <ul>
+           <li class="item">
+             <img class="item-img" src="" alt="Amara Resort &amp; Spa">
+             <p class="item-name"> <b> Amara Resort &amp; Spa</b></p>
+             <p class="item-type">Гостиница</p>
+             <p class="item-price">От 4000 Р.</p>
+             <img class="item-stars" src="" alt="5 звезд">
+             <p class="item-rating"> Рейтинг: 8,5</p>
+             <a class="btn more" href="#">Подробнее</a>
+             <a class="btn book" href="#">Забронировать</a>
+           </li>
+           <li class="holel">
+             <img class="item-img" src="" alt="Desert Quail Inn">
+             <p class="item-name"> <b> Desert Quail Inn</b></p>
+             <p class="item-type">Мотель</p>
+             <p class="item-price">От 3000 Р.</p>
+             <img class="item-stars" src="" alt="3 звезды">
+             <p class="item-rating"> Рейтинг: 8,9</p>
+             <a class="btn more" href="#">Подробнее</a>
+             <a class="btn book" href="#">Забронировать</a>
+           </li>
+           <li class="holel">
+             <img class="item-img" src="" alt="Villas at Poco Diablo">
+             <p class="item-name"> <b> Villas at Poco Diablo</b></p>
+             <p class="item-type">Апартаменты</p>
+             <p class="item-price">От 2000 Р.</p>
+             <img class="item-stars" src="" alt="2 звезды">
+             <p class="item-rating"> Рейтинг: 9,2</p>
+             <a class="btn more" href="#">Подробнее</a>
+             <a class="btn book" href="#">Забронировать</a>
+           </li>
+         </ul>
 
          </section>
        </main>
