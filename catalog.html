@@ -27,8 +27,11 @@
 
        <main>
          <h1 class="visually-hidden">Выберите отель</h1>
+
       <section class="filters">
-        <form class="infostructure" action="" method="post">
+        <form class="form-filters" action="" method="post">
+
+        <div class="infostructure" >
           <h2 class="visually-hidden">Фильтр по инфраструктуре</h2>
           <p>Инфраструктура:</p>
           <p>
@@ -43,9 +46,9 @@
           <input type="checkbox" name="wifi" value="" >
           Wi-Fi
         </p>
-        </form>
+      </div>
 
-        <form class="housing-type" action="" method="post">
+        <div class="housing-type" >
           <h2 class="visually-hidden">Фильтр по типу жилья</h2>
           <p>Тип жилья:</p>
           <p>
@@ -60,15 +63,32 @@
           <input type="checkbox" name="apartment" value="" checked  >
           Апартаменты
         </p>
-        </form>
+      </div>
 
         <div class="price-selection">
             <h2 class="visually-hidden">Фильтр по стоимости</h2>
           <p>Стоимость в сутки (Р):</p>
-          <p>от 0 </p>
-            <p>до 3000</p>
+          <table>
+            <tr>
+              <td>от 0</td>
+              <td>до 3000</td>
+            </tr>
+          </table>
+            <input type="range" multiple value="0,3000" min="0" max="3000" step="1000"/>
         </div>
+
         <button type="button" name="show">Показать</button>
+          </form>
+      </section>
+
+      <section class="sorting">
+        <b>Найдено: 3</b>
+        <p>Сортировка:</p>
+        <ul>
+          <li><a class="sorting-price" href="#">По цене</a> </li>
+          <li><a href="#" class="sorting-type">По типу</a> </li>
+          <li><a href="#" class="sorting-rating">По рейтингу</a> </li>
+        </ul>
       </section>
 
          <section class="items-list">

@@ -26,17 +26,16 @@
 
   <main>
     <h1 class="visually-hidden">Туристическая Седона</h1>
-    <div class="welcome">
-    <img src="" alt="Welcome to Sedona">
+
+    <section class="welcome">
+    <img class="welcome-img" src="" alt="Welcome to Sedona">
+    <div class="slogan">
+      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!  </h2>
+      <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
-  </div>
-<div class="slogan">
-  <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!  </h2>
-  <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
- </div>
+   </section>
 
     <section class="advantages">
-      <!-- Нужен ли тогда section ? пока оставлю, если не буду испольщовать удалю.-->
       <div class="container">
         <ol class="advantages-list">
         <li class="advantages-item">
@@ -92,17 +91,13 @@
           </ul>
         </section>
 
-        <div class="container">
-          <!-- заменила стронг на б , особого смысла эта фраза не несет? -->
+        <section class="order">
+          <div class="order-info">
         <b>Заинтересовались?</b>
         <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-       </div>
-
-<!-- переделала баттон в а, так логичнее : нажимаешь на ссылку и открывается форма.-->
-         <section class="order">
-           <div class="container">
+          </div>
              <a href="#"> <strong> ПОИСК ГОСТИНИЦЫ В седоне</strong></a>
-<!-- заменила label на р, исправила ошибку -->
+
            <form class="search" action="" method="post">
              <p> Дата заезда:
                <input type="data" name="arrival" value="24 апреля 2017">
@@ -120,7 +115,6 @@
               </p>
               <input type="submit" name="search" value="Найти">
            </form>
-         </div>
          </section>
 <!-- здесь должна быть карта, но я пока не имею ни малейшего понятия что это такое и с чем его едят -->
     </main>
