@@ -9,10 +9,11 @@
     <header class="main-header">
       <div class="container">
         <div class="header-top">
-          <nav class="main-menu">
+        <!-- в спецификации указано:Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
             <a  class="logo" href="#">
             <img src="img/logo.svg" width="140" height="71" alt="CITY OF SEDONA">
           </a>
+            <nav class="main-menu">
             <ul>
               <li><a href="#">Информация</a></li>
               <li><a href="#">Фото и видео</a></li>
@@ -96,13 +97,16 @@
         <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
              <a href="#"> <strong> Поиск гостиницы в Седоне</strong></a>
-
+<!-- Спецификация: Иконка календаря в поле ввода даты должна быть добавлена отдельным элементом для того,
+ чтобы в будущем на неё программист мог повесить событие нажатия для открытия календаря с возможностью выбора даты. -->
            <form class="search" action="" method="post">
-             <p> Дата заезда:
-               <input type="data" name="arrival" value="24 апреля 2017">
+             <p class="date-select"> Дата заезда:
+               <input type="data" name="arrival" value="24 апреля 2017" >
+               <img class="calendar" src="img/calendar.svg" alt="календарь">
              </p>
-             <p> Дата выезда:
+             <p class="date-select"> Дата выезда:
                <input type="data" name="departure" value="4 июля 2017">
+               <img class="calendar" src="img/calendar.svg" alt="календарь">
               </p>
               <p> Взрослые:
                 <input type="number" name="adults" value="2">
