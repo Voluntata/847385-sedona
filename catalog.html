@@ -30,7 +30,7 @@
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
-      <form class="form-filters" method="get">
+      <form class="form-filters" method="get" >
 
         <fieldset>
           <legend>Инфраструктура:</legend>
@@ -81,16 +81,14 @@
 
         <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <!--здесь должно быть что-то другое, но пока не знаю что  -->
-            <table>
-              <tr>
-                <td>от 0</td>
-                <td>до 3000</td>
-              </tr>
-            </table>
-            <input type="range" multiple value="0,3000" min="0" max="3000" step="1000"/>
+            <div class="output-area">
+            <span class="output-text">oт</span> <output name="from-output" for="from-range">0</output>
+            <span class="output-text">до</span>  <output name="to-output" for="to-result">3000</output>
+            </div>
+            <input type="range" value="0" min="0" max="10000" step="1000" name="from-range" id="from-range"/>
+            <input type="range" value="3000" min="0" max="10000" step="1000" name="to-range" id="to-range"/>
           </fieldset>
-          <!--на лекции сказали, что input type submit лучше не использовать  -->
+
           <button type="submit" name="show">Показать</button>
         </form>
       </section>
