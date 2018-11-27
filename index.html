@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -30,6 +33,7 @@
     <h1 class="visually-hidden">Туристическая Седона</h1>
 
     <section class="welcome">
+      <div class="welcome"></div>
       <div class="container">
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!  </h2>
         <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -40,13 +44,13 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
         <ol class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
+          <li class="advantages-item-special">
+            <h3 class="advantages-title-white">Настоящий городок</h3>
             <p class="text">— №1 —</p>
             <p class="text">Седона - не атракцион для туристов, там течет своя жизнь</p>
             <img src="img/layer-10.jpg" alt="Настоящий городок" width="800" height="256">
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-special">
             <h3 class="advantages-title">Там есть Мост дьявола</h3>
             <p class="text">— №2 —</p>
             <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -112,11 +116,11 @@
             <input type="data" id="departure-date" name="departure" value="" placeholder="4 июля 2017">
             <img class="calendar" src="img/calendar.svg" alt="календарь">
           </p>
-          <p>
-            <label for="adults-number"> Взрослые </label>
+          <p class="number-select">
+            <label for="adults-number"> Взрослые: </label>
             <input type="number" id="adults-number" name="adults" value="" placeholder="2">
           </p>
-          <p>
+          <p class="number-select">
             <label for="childs-number"> Дети:</label>
             <input type="number" id="childs-number" name="childs" value="" placeholder="0">
           </p>
@@ -145,7 +149,7 @@
         </div>
         <div class="footer-right">
           <a href="https://htmlacademy.ru/intensive/htmlcss"> website by
-            <img src="img/logo-name.svg" width="115" height="41" alt="htmlacademy">
+            <img src="img/logo-name.png" width="115" height="41" alt="htmlacademy">
           </a>
         </div>
       </footer>

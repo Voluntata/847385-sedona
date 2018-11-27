@@ -1,0 +1,215 @@
+body{
+  margin: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main-menu{
+  line-height: 26px;
+  font-weight: bold;
+  color: #333333;
+  background-color: white;
+}
+
+.main-menu-items{
+  list-style: none;
+}
+
+.main-menu-items a{
+  color: #333333;
+}
+
+.main-menu-items a:hover,
+.main-menu-items a:focus
+{
+  color: #81b3d2;
+  outline: none;
+}
+
+.main-menu-items a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+ /* .main-menu-items a:{
+  color: #766357;
+}  */
+div.welcome {
+  background-image: url("../img/polygon.svg"), url("../img/welcome.png"), url("../img/background-photo.jpg");
+  background-position: bottom, center 132px, center;
+  /* пока по центру, дальше исправлю */
+  background-repeat: no-repeat;
+  width: auto;
+  height:  773px;
+
+}
+
+.welcome h2{
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+
+}
+
+.welcome p{
+  line-height: 26px;
+}
+
+.advantages-item{
+  list-style: none;
+  background-color: #eeeeee;
+}
+
+.advantages-item-special{
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.advantages-item .advantages-title{
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.features li{
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.features-title{
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.order-info b{
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.order-info p{
+  line-height: 24px;
+}
+
+.btn-order{
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  border-style: none;
+  width: 568px;
+  height: 86px;
+}
+
+.btn-order:hover,
+.btn-order:focus{
+    background-color: #604e43;
+    outline: none;
+}
+
+.btn-order:active{
+    background-color: #503e33;
+    outline: none;
+}
+.search{
+  background-color: #ffffff;
+}
+
+.search label{
+  color: #000000;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.date-select input,
+.number-select input{
+  background-color: #f2f2f2;
+  border-style: none;
+}
+
+.search button{
+  background-color: #81b3d2;
+  width: 458px;
+  height: 58px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  border-style: none;
+  text-transform: uppercase;
+}
+
+.footer-left a{
+  color: #000000;
+  line-height: 26px;
+  font-size: 21px;
+  font-weight:bold;
+}
+
+.footer-center li{
+  list-style: none;
+}
+
+.footer-right a{
+color: #000000;
+line-height: 26px;}
+
+/* Разметка страницы каталога */
+.inner{
+  text-align: left;}
+
+.items-list li {
+  list-style: none;
+}
+
+.item .item-name{
+  color: #000000;
+  line-height: 26px;
+  font-size: 21px;
+}
+
+.item .item-name:focus,
+.item .item-name:hover{
+  color: #81b3d2;
+}
+
+.item .item-name:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.item .btn-more,
+.item .btn-book{
+color: #ffffff;
+font-weight: bold;
+background-color: #81b3d2;
+}
+.item .btn-book{
+background-color: #766357;
+}
+.item .btn-more:focus,
+.item .btn-more:hover{
+  background-color: #669ec0;
+}
+
+.item .btn-more:active{
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.item-rating{
+  color:#666666;
+  background-color: #f2f2f2;
+  border-color:none;
+}
