@@ -35,13 +35,10 @@ a{
   outline: none;
 }
 
-.main-menu-items a:active{
-  color: rgba(0, 0, 0, 0.3);
+ .main-menu-items a.active-page{
+color: #766357;
 }
 
- /* .main-menu-items a:{
-  color: #766357;
-}  */
 div.welcome {
   background-image: url("../img/polygon.svg"), url("../img/welcome.png"), url("../img/background-photo.jpg");
   background-position: bottom, center 132px, center;
@@ -114,13 +111,13 @@ div.welcome {
 
 .btn-order:hover,
 .btn-order:focus{
-    background-color: #604e43;
-    outline: none;
+  background-color: #604e43;
+  outline: none;
 }
 
 .btn-order:active{
-    background-color: #503e33;
-    outline: none;
+  background-color: #503e33;
+  outline: none;
 }
 .search{
   background-color: #ffffff;
@@ -136,6 +133,31 @@ div.welcome {
 .number-select input{
   background-color: #f2f2f2;
   border-style: none;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input::placeholder{
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.date-select input:hover{
+  color: #000000;
+  font-weight: bold;
+  background-color: #ebebeb;
+  outline: none;
+}
+
+.date-select input:focus{
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
+
 }
 
 .search button{
@@ -163,53 +185,63 @@ div.welcome {
 }
 
 .footer-right a{
-color: #000000;
-line-height: 26px;}
-
-/* Разметка страницы каталога */
-.inner{
-  text-align: left;}
-
-.items-list li {
-  list-style: none;
-}
-
-.item .item-name{
   color: #000000;
-  line-height: 26px;
-  font-size: 21px;
-}
+  line-height: 26px;}
 
-.item .item-name:focus,
-.item .item-name:hover{
-  color: #81b3d2;
-}
+  /* Разметка страницы каталога */
+  .inner{
+    text-align: left;}
 
-.item .item-name:active{
-  color: rgba(0, 0, 0, 0.3);
-}
+    .items-list li {
+      list-style: none;
+    }
 
-.item .btn-more,
-.item .btn-book{
-color: #ffffff;
-font-weight: bold;
-background-color: #81b3d2;
-}
-.item .btn-book{
-background-color: #766357;
-}
-.item .btn-more:focus,
-.item .btn-more:hover{
-  background-color: #669ec0;
-}
+    .item .item-name{
+      color: #000000;
+      line-height: 26px;
+      font-size: 21px;
+    }
 
-.item .btn-more:active{
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
-}
+    .item .item-name:focus,
+    .item .item-name:hover{
+      color: #81b3d2;
+    }
 
-.item-rating{
-  color:#666666;
-  background-color: #f2f2f2;
-  border-color:none;
-}
+    .item .item-name:active{
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    .item .btn-more,
+    .item .btn-book{
+      color: #ffffff;
+      font-weight: bold;
+      background-color: #81b3d2;
+    }
+    .item .btn-book{
+      background-color: #766357;
+    }
+    .item .btn-more:focus,
+    .item .btn-more:hover{
+      background-color: #669ec0;
+    }
+
+    .item .btn-more:active{
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .item .btn-book:focus,
+    .item .btn-book:hover{
+      background-color: #604e43;
+    }
+
+    .item .btn-book:active{
+      background-color: #503e33;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .item-rating{
+      color:#666666;
+      background-color: #f2f2f2;
+      border-color:none;
+    }
