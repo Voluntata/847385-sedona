@@ -35,18 +35,17 @@ a{
   outline: none;
 }
 
- .main-menu-items a.active-page{
-color: #766357;
+.main-menu-items a.active-page{
+  color: #766357;
 }
 
 div.welcome {
+  width: auto;
+  height: 773px;
   background-image: url("../img/polygon.svg"), url("../img/welcome.png"), url("../img/background-photo.jpg");
   background-position: bottom, center 132px, center;
   /* пока по центру, дальше исправлю */
   background-repeat: no-repeat;
-  width: auto;
-  height:  773px;
-
 }
 
 .welcome h2{
@@ -67,8 +66,9 @@ div.welcome {
 }
 
 .advantages-item-special{
-  background-color: #81b3d2;
   color: #ffffff;
+  background-color: #81b3d2;
+
 }
 
 .advantages-item .advantages-title{
@@ -93,20 +93,21 @@ div.welcome {
   line-height: 36px;
   color: #000000;
 }
+
 .order-info p{
   line-height: 24px;
 }
 
 .btn-order{
-  background-color: #766357;
+  width: 568px;
+  height: 86px;
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   text-transform: uppercase;
+  background-color: #766357;
   border-style: none;
-  width: 568px;
-  height: 86px;
 }
 
 .btn-order:hover,
@@ -131,11 +132,12 @@ div.welcome {
 
 .date-select input,
 .number-select input{
-  background-color: #f2f2f2;
-  border-style: none;
+
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+  border-style: none;
 }
 
 input::placeholder{
@@ -157,11 +159,9 @@ input::placeholder{
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: none;
-
 }
 
-.search button{
-  background-color: #81b3d2;
+.search button[name="search"]{
   width: 458px;
   height: 58px;
   color: #ffffff;
@@ -169,15 +169,33 @@ input::placeholder{
   font-size: 21px;
   line-height: 26px;
   text-align: center;
-  border-style: none;
   text-transform: uppercase;
+  background-color: #81b3d2;
+  border-style: none;
+}
+
+.search button[name="search"]:focus,
+.search button[name="search"]:hover{
+  background-color: #669ec0;
+}
+
+.search button[name="search"]:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+button[name="button-number"]{
+  color: #cacaca;
+  font-size: 11px;
+  border: none;
+  background-color: #f2f2f2;
 }
 
 .footer-left a{
   color: #000000;
   line-height: 26px;
   font-size: 21px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .footer-center li{
@@ -189,9 +207,85 @@ input::placeholder{
   line-height: 26px;}
 
   /* Разметка страницы каталога */
-  .inner{
+  .inner main{
     text-align: left;}
 
+    .filters{
+      background-image: url("../img/filter-background.jpg");
+      background-repeat: no-repeat;
+      background-position: -300px -150px;
+      color: #ffffff;
+      width: auto;
+    }
+
+    .filters fieldset{
+      border: none;
+    }
+
+    .filters legend{
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .filters li{
+      list-style: none;
+    }
+
+    .filters button{
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 2px solid #ffffff;
+      background-color: transparent;
+    }
+
+    .filters button:hover,
+    .filters button:focus{
+      color: #000000;
+      text-transform: uppercase;
+      outline: none;
+      border: 2px solid #ffffff;
+      background-color: #ffffff;
+    }
+
+    .sorting b{
+      font-size: 21px;
+      line-height: 26px;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .sorting {
+      font-size: 10.5px;
+      line-height: 17.5px;
+      color: #000000;
+    }
+
+    .sorting li{
+      list-style: none;
+    }
+
+    .sorting-link{
+      color: rgba(0, 0, 0, 0.3);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: #81b3d2;
+      outline: none;
+    }
+
+    .sorting-link:hover,
+    .sorting-link:focus {
+      color: #81b3d2
+    }
+
+    .sorting-link:active{
+      color: #000000;
+      text-decoration: none;
+    }
+    .sorting-link.current{
+      color: #81b3d2;
+      text-decoration: none;
+    }
+/* стрелки пока не делаю, потому что они картинки */
     .items-list li {
       list-style: none;
     }
@@ -217,17 +311,19 @@ input::placeholder{
       font-weight: bold;
       background-color: #81b3d2;
     }
+
     .item .btn-book{
       background-color: #766357;
     }
+
     .item .btn-more:focus,
     .item .btn-more:hover{
       background-color: #669ec0;
     }
 
     .item .btn-more:active{
-      background-color: #5496bd;
       color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
     }
 
     .item .btn-book:focus,
@@ -236,8 +332,8 @@ input::placeholder{
     }
 
     .item .btn-book:active{
-      background-color: #503e33;
       color: rgba(255, 255, 255, 0.3);
+      background-color: #503e33;
     }
 
     .item-rating{

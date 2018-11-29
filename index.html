@@ -109,20 +109,24 @@
           <p class="date-select">
             <label for="arrival-date"> Дата заезда:</label>
             <input type="data" id="arrival-date" name="arrival" value="" placeholder="24 апреля 2017" >
-            <img class="calendar" src="img/calendar.svg" alt="календарь">
           </p>
           <p class="date-select">
             <label for="departure-date">Дата выезда:</label>
             <input type="data" id="departure-date" name="departure" value="" placeholder="4 июля 2017">
-            <img class="calendar" src="img/calendar.svg" alt="календарь">
           </p>
           <p class="number-select">
-            <label for="adults-number"> Взрослые: </label>
+            <label for="adults-number"> Взрослые:
+            <button type="button" name="button-number">-</button>
             <input type="number" id="adults-number" name="adults" value="" placeholder="2">
+            <button type="button" name="button-number">+</button>
+             </label>
           </p>
           <p class="number-select">
-            <label for="childs-number"> Дети:</label>
+            <label for="childs-number"> Дети:
+              <button type="button" name="button-number">-</button>
             <input type="number" id="childs-number" name="childs" value="" placeholder="0">
+            <button type="button" name="button-number">+</button>
+            </label>
           </p>
           <button type="submit" name="search" class="btn-search">Найти</button>
         </form>
@@ -148,9 +152,7 @@
           </ul>
         </div>
         <div class="footer-right">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"> website by
-            <img src="img/logo-name.png" width="115" height="41" alt="htmlacademy">
-          </a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"> website by</a>
         </div>
       </footer>
     </body>
