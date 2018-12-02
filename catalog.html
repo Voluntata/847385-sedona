@@ -30,26 +30,27 @@
 
   <main>
     <h1 class="visually-hidden">Выберите отель</h1>
-
+    <div class="container ">
+      <div class="wrapper-inner">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="form-filters" method="get" >
 
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <ul class="filter-infostructure">
+          <ul class="filter-list">
             <li class="filter-opton">
               <label>
                 <input type="checkbox" name="pool" value="" checked >
                 Бассейн </label>
               </li>
-              <li class="filter-opton">
+              <li class="filter-option">
                 <label>
                   <input type="checkbox" name="parcking" value="" >
                   Парковка
                 </label>
               </li>
-              <li class="filter-opton">
+              <li class="filter-option">
                 <label>
                   <input type="checkbox" name="wifi" value="" >
                   Wi-Fi
@@ -60,20 +61,20 @@
 
           <fieldset>
             <legend>Тип жилья:</legend>
-            <ul class="filter-housing">
-              <li class="filter-opton">
+            <ul class="filter-list">
+              <li class="filter-option">
                 <label>
                   <input type="checkbox" name="item" value="" checked >
                   Гостиница
                 </label>
               </li>
-              <li class="filter-opton">
+              <li class="filter-option">
                 <label>
                   <input type="checkbox" name="motel" value="" checked  >
                   Мотель
                 </label>
               </li>
-              <li class="filter-opton">
+              <li class="filter-option">
                 <label>
                   <input type="checkbox" name="apartment" value="" checked  >
                   Апартаменты
@@ -93,10 +94,14 @@
           </fieldset>
 
           <button type="submit" name="show">Показать</button>
+
         </form>
+      </div>
+    </div>
       </section>
 
       <section class="sorting">
+        <div class="container">
         <b>Найдено: 3</b>
         <p>Сортировка:</p>
         <ul>
@@ -106,10 +111,12 @@
         </ul>
         <a class="arrow-up" href="#">Вверх</a>
         <a class="arrow-down current" href="#">Вниз</a>
+        </div>
       </section>
 
       <section class="items-list">
         <h2 class="visually-hidden">Подходящие отели</h2>
+        <div class="container">
         <ul>
           <li class="item">
             <img class="item-img" src="img/layer-21.jpg" alt="Amara Resort &amp; Spa" width="135" height="90">
@@ -142,22 +149,23 @@
             <a class="btn-book" href="book.html">Забронировать</a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-left">
+        <div class="footer-left footer">
           <a href="visitsedoma.html">#visitsedona</a>
         </div>
-        <div class="footer-center">
+        <div class="footer-center footer">
           <ul class="footer-social">
             <li><a href="twitter.com/sedona" class="social-btn social-btn-tw">Twitter</a></li>
             <li><a href="facebook.com/sedona" class="social-btn social-btn-fb">Facebook</a></li>
             <li><a href="youtube.com/sedona" class="social-btn social-btn-ytb">YouTube</a></li>
           </ul>
         </div>
-        <div class="footer-right">
+        <div class="footer-right footer">
           <a href="https://htmlacademy.ru/intensive/htmlcss"> website by</a>
         </div>
       </footer>

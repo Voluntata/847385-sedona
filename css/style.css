@@ -1,16 +1,49 @@
 body{
-  margin: 0;
+  margin: 0 40px;
+  padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
   text-align: center;
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 a{
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.header-top{
+  background-color: white;
+  position: relative;
+}
+
+.logo{
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 530px;
+  z-index: 3;
 }
 
 .main-menu{
@@ -18,10 +51,16 @@ a{
   font-weight: bold;
   color: #333333;
   background-color: white;
+  min-width: 56px;
 }
 
 .main-menu-items{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px 72px;
   list-style: none;
+
 }
 
 .main-menu-items a{
@@ -39,47 +78,102 @@ a{
   color: #766357;
 }
 
-div.welcome {
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
   width: auto;
   height: 773px;
   background-image: url("../img/polygon.svg"), url("../img/welcome.png"), url("../img/background-photo.jpg");
-  background-position: bottom, center 132px, center;
-  /* пока по центру, дальше исправлю */
+  background-position: 0 450px, center 75px, 0 -80px;
   background-repeat: no-repeat;
-}
 
+}
+.welcome-text{
+ display: block;
+ position: absolute;
+ top: 505px;
+  background-color: #ffffff;
+  padding-top: 45px;
+  padding-bottom: 36px;
+
+}
 .welcome h2{
+  padding: 0 375px;
+  margin-bottom: 26px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-
 }
 
 .welcome p{
   line-height: 26px;
+  display: block;
 }
-
+.advantages-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
 .advantages-item{
   list-style: none;
   background-color: #eeeeee;
+  width: 400px;
+  margin:0;
+  padding: 0;
 }
 
-.advantages-item-special{
+.advantages-text{
+  padding: 50px}
+
+.advantages-item-special .advantages-text{
   color: #ffffff;
   background-color: #81b3d2;
-
+}
+li.advantages-item-special {
+  width: 1200px;
+  display: flex ;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  margin:0;
+  padding: 0;
+}
+li.advantages-item-special:first-child {
+  flex-direction: row;
+  order: -2;
 }
 
+  li.advantages-item:last-child{
+    order: -1;
+  }
 .advantages-item .advantages-title{
   font-size: 21px;
   font-weight: bold;
   color: #000000;
 }
 
-.features li{
+.features-item-list{
   list-style: none;
   background-color: #ffffff;
+  display: flex ;
+  justify-content: space-between;
+  width:1200px;
+  padding: 0;
+  margin:0;
+
+}
+.features-item{
+  width: 400px;
+  background-color: #ffffff;
+ padding: 50px;
+
 }
 
 .features-title{
@@ -87,7 +181,9 @@ div.welcome {
   font-weight: bold;
   color: #000000;
 }
-
+.order-info{
+  padding: 50px 380px;
+}
 .order-info b{
   font-size: 30px;
   line-height: 36px;
@@ -99,6 +195,7 @@ div.welcome {
 }
 
 .btn-order{
+  margin: 0;
   width: 568px;
   height: 86px;
   color: #ffffff;
@@ -120,8 +217,20 @@ div.welcome {
   background-color: #503e33;
   outline: none;
 }
+
+ .map img{
+  position: relative;
+}
 .search{
+  width: 568px;
+  height: 285px;
+  padding: 55px 0;
   background-color: #ffffff;
+  margin: 0;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: absolute;
+  left: 316px;
+  z-index:2;
 }
 
 .search label{
@@ -190,19 +299,41 @@ button[name="button-number"]{
   border: none;
   background-color: #f2f2f2;
 }
+.main-footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  width: 400px;
+  margin: 0;
+ padding: 0;
+}
 
 .footer-left a{
+  display: block;
+  padding-top:50px;
+  padding-bottom: 50px;
   color: #000000;
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
 }
 
+.footer-center ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
 .footer-center li{
   list-style: none;
+  width: 36px;
 }
 
 .footer-right a{
+  display: block;
+  padding-top:50px;
+  padding-bottom: 50px;
+
   color: #000000;
   line-height: 26px;}
 
@@ -210,14 +341,22 @@ button[name="button-number"]{
   .inner main{
     text-align: left;}
 
-    .filters{
-      background-image: url("../img/filter-background.jpg");
-      background-repeat: no-repeat;
-      background-position: -300px -150px;
+  .wrapper-inner{
+    background-image: url("../img/filter-background.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: auto;
+  }
+    .filters form{
       color: #ffffff;
-      width: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
+  .filter-list{
+    width: 300px;
+  }
     .filters fieldset{
       border: none;
     }
@@ -232,6 +371,8 @@ button[name="button-number"]{
     }
 
     .filters button{
+      align-self: flex-end;
+      margin:auto;
       color: #ffffff;
       text-transform: uppercase;
       border: 2px solid #ffffff;
@@ -248,18 +389,26 @@ button[name="button-number"]{
     }
 
     .sorting b{
+      display: block;
+      width:120px;
       font-size: 21px;
       line-height: 26px;
       color: #000000;
       font-weight: bold;
     }
 
-    .sorting {
+    .sorting .container {
+      display: flex;
+      justify-content: space-between;
       font-size: 10.5px;
       line-height: 17.5px;
       color: #000000;
     }
-
+  .sorting ul{
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+  }
     .sorting li{
       list-style: none;
     }
@@ -286,10 +435,19 @@ button[name="button-number"]{
       text-decoration: none;
     }
 /* стрелки пока не делаю, потому что они картинки */
+
+    .items-list ul{
+      padding: 0;
+      margin: 0;
+    }
     .items-list li {
       list-style: none;
+      border-top: 1px solid #f2f2f2;
+      padding:10px;
     }
-
+    .items-list li:last-child{
+      border-bottom: 1px solid #f2f2f2;
+    }
     .item .item-name{
       color: #000000;
       line-height: 26px;
@@ -340,4 +498,5 @@ button[name="button-number"]{
       color:#666666;
       background-color: #f2f2f2;
       border-color:none;
+      width: 100px;
     }
