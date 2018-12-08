@@ -118,16 +118,13 @@
           <p class="text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <button type="submit" class="btn-order"> Поиск гостиницы в Седоне</button>
-
-      </div>
-        <!-- Спецификация: Иконка календаря в поле ввода даты должна быть добавлена отдельным элементом для того,
-        чтобы в будущем на неё программист мог повесить событие нажатия для открытия календаря с возможностью выбора даты. -->
+        </div>
         <form class="search"  method="get">
           <div class="date-select">
             <label for="arrival-date"> Дата заезда:</label>
             <p class="select-area">
             <input type="data" id="arrival-date" name="arrival" value="" placeholder="24 апреля 2017" >
-              <button type="button">
+              <button type="button" name="calendar">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
             <g id="calendar_1_">
@@ -156,7 +153,7 @@
             <label for="departure-date">Дата выезда:</label>
             <p class="select-area">
             <input type="data" id="departure-date" name="departure" value="" placeholder="4 июля 2017">
-            <button type="button">
+            <button type="button" name="calendar">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
             <g id="calendar_1_">
@@ -181,6 +178,7 @@
         </button>
           </p>
           </div>
+          <div class="number-column">
           <div class="number-select">
             <label for="adults-number"> Взрослые:</label>
             <p class="select-area">
@@ -197,7 +195,9 @@
             <button type="button" name="button-number">+</button>
           </p>
           </div>
+        </div>
           <button type="submit" name="search" class="btn-search">Найти</button>
+
         </form>
       </section>
 
