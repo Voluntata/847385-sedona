@@ -10,6 +10,7 @@ body{
   background-color: #f2f2f2;
 }
 
+
 a{
   text-decoration: none;
 }
@@ -775,7 +776,7 @@ button[name="button-number"]:active{
   .sorting-column .current path{
     fill:#81b3d2;
   }
-  /* стрелки будут здесь */
+
 
   .items-list ul{
     padding: 0;
@@ -784,7 +785,7 @@ button[name="button-number"]:active{
   .items-list li {
     list-style: none;
     border-top: 1px solid #f2f2f2;
-    padding:10px;
+
   }
   .items-list li:last-child{
     border-bottom: 1px solid #f2f2f2;
@@ -792,21 +793,44 @@ button[name="button-number"]:active{
   .item{
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
+    position:relative;
+    padding: 0;
+    margin: 0;
+  }
+  .item-img{
+    padding:30px;
+    padding-left:70px;
   }
   .item-block{
     display:flex;
-    flex-direction: column;
-    position:relative;
-    width:100%;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    box-sizing: content-box;
+    width:300px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    padding-left: 0;
   }
-  .item-block .rating{
-    position:absolute;
-    right:5px;
+  .item-row{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+
   }
+ .item-row p{
+  display:block;
+   margin: 0;
+   padding-bottom: 12px;
+  padding-top: 9px;
+}
+
   .item .item-name{
     color: #000000;
     line-height: 26px;
     font-size: 21px;
+    padding-bottom:0;
+    margin-bottom:0;
   }
 
   .item .item-name:focus,
@@ -823,6 +847,12 @@ button[name="button-number"]:active{
     color: #ffffff;
     font-weight: bold;
     background-color: #81b3d2;
+    display:inline-block;
+    text-align:center;
+    padding-left: 17px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 3px;
   }
 
   .item .btn-book{
@@ -849,9 +879,27 @@ button[name="button-number"]:active{
     background-color: #503e33;
   }
 
+  .item-block .rating{
+    position:absolute;
+    right: 74px;
+    top: 28px;
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .item-stars{
+    display: block;
+    content: "";
+    width: 100px;
+    height: 19px;
+    background-image: url(../img/invalid-name.svg);
+    margin-bottom: 30px;
+  }
+
   .item-rating{
     color:#666666;
     background-color: #f2f2f2;
     border-color:none;
-    width: 100px;
+    padding: 4px 13px;
   }
