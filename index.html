@@ -37,7 +37,7 @@
       <div class="container ">
         <div class="wrapper">
           <div class="welcome-text">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!  </h2>
+        <h2>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!  </h2>
         <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       </div>
@@ -55,7 +55,7 @@
               <p class="text">— №1 —</p>
               <p class="text">Седона - не атракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img src="img/layer-10.jpg" alt="Настоящий городок" width="800" height="256">
+            <img src="img/layer-10.jpg" alt="Настоящий городок" width="800" height="401">
             <h2 class="visually-hidden">Почему настоящий городок?</h2>
           </div>
             <ul class="features-item-list">
@@ -82,7 +82,7 @@
             <p class="text">— №2 —</p>
             <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <img src="img/layer-5.jpg" alt="Мост дьявола" width="800" height="256">
+            <img src="img/layer-5.jpg" alt="Мост дьявола" width="800" height="401">
 
           </li>
           <li class="advantages-item">
@@ -123,7 +123,7 @@
           <div class="date-select">
             <label for="arrival-date"> Дата заезда:</label>
             <p class="select-area">
-            <input type="data" id="arrival-date" name="arrival" value="" placeholder="24 апреля 2017" >
+            <input type="text" id="arrival-date" name="arrival" value="" placeholder="24 апреля 2017" >
               <button type="button" name="calendar">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -152,7 +152,7 @@
           <div class="date-select">
             <label for="departure-date">Дата выезда:</label>
             <p class="select-area">
-            <input type="data" id="departure-date" name="departure" value="" placeholder="4 июля 2017">
+            <input type="text" id="departure-date" name="departure" value="" placeholder="4 июля 2017">
             <button type="button" name="calendar">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -181,18 +181,18 @@
           <div class="number-column">
           <div class="number-select">
             <label for="adults-number"> Взрослые:</label>
-            <p class="select-area">
-            <button type="button" name="button-number">-</button>
+            <p class="select-area adults">
+            <button type="button" name="number-mynus">-</button>
             <input type="text" id="adults-number" name="adults" value="" placeholder="2">
-            <button type="button" name="button-number">+</button>
+            <button type="button" name="number-plus">+</button>
           </p>
           </div>
           <div class="number-select">
             <label for="childs-number"> Дети:</label>
               <p class="select-area">
-              <button type="button" name="button-number">-</button>
+              <button type="button" name="number-mynus">-</button>
             <input type="text" id="childs-number" name="childs" value="" placeholder="0">
-            <button type="button" name="button-number">+</button>
+            <button type="button" name="number-plus">+</button>
           </p>
           </div>
         </div>
@@ -232,7 +232,8 @@
 
          </a>
         </div>
+      </div>
       </footer>
-    
+
     </body>
     </html>
