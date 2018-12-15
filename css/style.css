@@ -474,42 +474,34 @@ input[type="radio"].visually-hidden {
   }
 
   .date-select input{
-    width: 100%;
+    width: 95%;
+    padding-left: 15px;
+
   }
 
   .number-select input{
-    width: 38px;
-
+    width: 22px;
+    padding-left: 15px;
     text-align:left;
   }
 
   input::-webkit-input-placeholder{
-    padding-left: 15px;
-
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
   }
-
-  input:-ms-input-placeholder{
-    padding-left: 15px;
-
+input:-ms-input-placeholder{
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
   }
-
-  input::-ms-input-placeholder{
-    padding-left: 15px;
-
+input::-ms-input-placeholder{
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   input::placeholder{
-    padding-left: 15px;
-
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
@@ -976,7 +968,7 @@ input[type="radio"].visually-hidden {
         display: inline-block;
 
         font-size: 14px;
-        line-height: 38px;
+        line-height: 21px;
         vertical-align: top;
 
         cursor: pointer;
@@ -991,6 +983,7 @@ input[type="radio"].visually-hidden {
       .price-controls input {
         width: 50px;
         margin: 0;
+        padding-top: 7px;
 
         color: inherit;
         font: inherit;
@@ -1246,7 +1239,7 @@ input[type="radio"].visually-hidden {
       .item-row p{
         display:block;
         text-align: left;
-        min-width: 110px;
+        width: 110px;
         margin:0;
         margin-right: 6px;;
       }
