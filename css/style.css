@@ -372,8 +372,9 @@ input[type="radio"].visually-hidden {
   }
 
   .btn-order{
+    display:block;
     width: 568px;
-    min-height: 86px;
+    padding: 29px 0;
 
     color: #ffffff;
     font-size: 21px;
@@ -399,11 +400,10 @@ input[type="radio"].visually-hidden {
   .search{
     position: absolute;
     z-index:2;
-    bottom: -398px;
+    bottom: -397px;
     right: 316px;
 
-
-    width: 457px;
+    width: 458px;
     padding: 55px;
     padding-top: 40px;
     margin: 0;
@@ -453,7 +453,11 @@ input[type="radio"].visually-hidden {
   .select-area.adults{
     margin-left:15px;
   }
+
   .search label{
+
+    padding:0;
+    margin:0;
     padding-right: 24px;
 
     color: #000000;
@@ -538,6 +542,20 @@ input::-ms-input-placeholder{
     margin: 0;
 
     border: none;
+  
+  }
+  .search button[name="calendar"]:hover,
+  .search button[name="calendar"]:focus,
+  .search button[name="calendar"]:active{
+    outline: none;
+  }
+
+  .search button[name="calendar"]:hover path,
+  .search button[name="calendar"]:focus path{
+    fill: #000000;
+  }
+  .search button[name="calendar"]:active path{
+    fill: #81b3d2;
   }
 
   .search button[name="search"]{
