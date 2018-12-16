@@ -1,21 +1,18 @@
-var searchForm = document.querySelector('.search');
-var searchButton = document.querySelector('.btn-order');
+var searchForm = document.querySelector(".search");
+var searchButton = document.querySelector(".btn-order");
+var arrivalDate = searchForm.querySelector("[name=arrival]");
 
-searchButton.addEventListener('click', function (evt) {
+searchButton.addEventListener("click", function (evt) {
    evt.preventDefault()
 });
 
-searchButton.onclick = function() {
-    if (searchForm.style.display !== 'none') {
-        searchForm.style.display = 'none';
-    }
-    else {
-        searchForm.style.display = 'block';
-    }
-};
+searchButton.addEventListener("click", function() {
+  searchForm.classList.toggle("search-show");
+  arrivalDate.focus();
+});
 
-document.addEventListener('keydown', function (evt) {
+document.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    searchForm.style.display = 'none';
+    searchForm.classList.remove("search-show");
   }
 });
