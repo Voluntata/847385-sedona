@@ -1,6 +1,18 @@
 var searchForm = document.querySelector(".search");
 var searchButton = document.querySelector(".btn-order");
 var arrivalDate = searchForm.querySelector("[name=arrival]");
+var departureDate = searchForm.querySelector("[name=departure]");
+var adultsNumber = searchForm.querySelector("[name=adults]");
+var childsNumber = searchForm.querySelector("[name=childs]");
+
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem("adultsNumber");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 searchButton.addEventListener("click", function (evt) {
    evt.preventDefault()
@@ -16,3 +28,15 @@ document.addEventListener("keydown", function (evt) {
     searchForm.classList.remove("search-show");
   }
 });
+
+searchForm.addEventListener("submit", function (evt) {
+  if (!arrivalDate.value || !departureDate.value || !adultsNumber.value || !childsNumder.value){
+  alert("Укажите даты заезда-выезда и количество человек");
+   evt.preventDefault();
+ }
+ 
+ localStorage.setItem("arrivalDate", arrivalDate.value);
+ localStorage.setItem("departureDate", departureDate.value);
+ localStorage.setItem("adultsNumber", adultsNumber.value);
+ localStorage.setItem("childsNumber", childsNumber.value);
+ });
