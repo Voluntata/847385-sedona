@@ -960,12 +960,12 @@ input[type="radio"].visually-hidden {
         background-repeat: no-repeat;
       }
 
-
+      .label-checkbox input[type="checkbox"]:active + .checkbox-indicator,
       .label-checkbox input[type="checkbox"]:focus + .checkbox-indicator,
       .label-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
         background-image: url("../img/checkbox-off.svg");
         background-repeat: no-repeat;
-
+        outline: 2px solid red;
       }
 
       .label-checkbox input[type="checkbox"]:checked + .checkbox-indicator{
