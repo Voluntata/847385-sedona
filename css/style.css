@@ -50,6 +50,11 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+.container{
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
 .header-top{
   position: relative;
 }
@@ -202,6 +207,8 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
     margin:0;
     padding: 0;
 
@@ -257,10 +264,9 @@ input[type="radio"].visually-hidden {
   }
 
   .advantages-item-special img{
-    -o-object-fit: cover;
     object-fit: cover;
-    width: 800px;
-    height: 256px;
+    min-width: 800px;
+    min-height: 256px;
 
   }
   .advantages-title{
@@ -315,12 +321,12 @@ input[type="radio"].visually-hidden {
   }
 
   .features-housing:before{
-    background-image: url(../img/icon-1.svg);
+    background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
   }
 
   .features-food:before{
-    background-image: url(../img/icon-3.svg);
+    background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
   }
 
@@ -328,7 +334,7 @@ input[type="radio"].visually-hidden {
     left: 168px;
     top: 57px;
 
-    background-image: url(../img/icon-2.svg);
+    background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
   }
   .features-title{
@@ -431,11 +437,16 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
+     /* max-height:0px;
+    overflow:hidden;
+   -webkit-transition:max-height 0.8s linear;
+   -moz-transition:max-height 0.8s linear;
+    transition: max-height 0.8s linear; */
   }
 
   .search-show{
     display: block;
-    animation: bounce 0.6s;
+
   }
 
   .number-column{
@@ -564,19 +575,21 @@ input[type="radio"].visually-hidden {
     margin: 0;
 
     border: none;
+    background-color: transparent;
 
   }
   .search button[name="calendar"]:hover,
   .search button[name="calendar"]:focus,
   .search button[name="calendar"]:active{
     outline: none;
+
   }
 
-  .search button[name="calendar"]:hover path,
-  .search button[name="calendar"]:focus path{
+ button[name="calendar"]:hover path,
+ button[name="calendar"]:focus path{
     fill: #000000;
   }
-  .search button[name="calendar"]:active path{
+ button[name="calendar"]:active path{
     fill: #81b3d2;
   }
 
@@ -785,19 +798,19 @@ input[type="radio"].visually-hidden {
   }
 
   .social-btn-tw{
-    background-image: url(../img/twitter.svg);
+    background-image: url("../img/twitter.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .social-btn-fb{
-    background-image: url(../img/fb-icon.svg);
+    background-image: url("../img/fb-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .social-btn-ytb{
-    background-image: url(../img/youtube.svg);
+    background-image: url("../img/youtube.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -895,6 +908,8 @@ input[type="radio"].visually-hidden {
 
         font-size: 16px;
         font-weight: bold;
+        color: #ffffff;
+
       }
 
       .filters li{
@@ -919,15 +934,21 @@ input[type="radio"].visually-hidden {
         margin-top: 20px;
       }
 
-      .login-checkbox {
+
+
+      .label-checkbox {
         position: relative;
 
         padding-left: 40px;
 
         cursor: pointer;
       }
+      /* .label-checkbox:hover,
+      .label-checkbox:focus, */
+       /* .label-checkbox:active{
+        outline: 2px solid #81b3d2;} */
 
-      .login-checkbox input[type="checkbox"] + .checkbox-indicator {
+      .label-checkbox input[type="checkbox"] + .checkbox-indicator {
         position: absolute;
         top: 0;
         left: 0;
@@ -939,32 +960,35 @@ input[type="radio"].visually-hidden {
         background-repeat: no-repeat;
       }
 
-      .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+
+      .label-checkbox input[type="checkbox"]:focus + .checkbox-indicator,
+      .label-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
         background-image: url("../img/checkbox-off.svg");
         background-repeat: no-repeat;
+
       }
 
-      .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator{
+      .label-checkbox input[type="checkbox"]:checked + .checkbox-indicator{
         width: 27px;
 
         background-image: url("../img/checkbox-on.svg");
         background-repeat: no-repeat;
       }
 
-      .login-checkbox input[type="checkbox"]:disabled + .checkbox-indicator{
+      .label-checkbox input[type="checkbox"]:disabled + .checkbox-indicator{
         width: 27px;
 
         background-image: url("../img/checkbox-off-3.svg");
         background-repeat: no-repeat;
-        opacity: 0.5;
+
       }
 
-      .login-checkbox input[type="checkbox"]:disabled:checked + .checkbox-indicator{
+      .label-checkbox input[type="checkbox"]:disabled:checked + .checkbox-indicator{
         width: 27px;
 
         background-image: url("../img/checkbox-on-2.svg");
         background-repeat: no-repeat;
-        opacity: 0.5;
+
       }
 
       .filter-range {
@@ -1174,7 +1198,7 @@ input[type="radio"].visually-hidden {
         -webkit-text-decoration-color: #81b3d2;
         text-decoration-color: #81b3d2;
 
-        outline: none;
+        /* outline: none; */
       }
 
       .sorting-link:hover,
@@ -1328,14 +1352,14 @@ input[type="radio"].visually-hidden {
 
         color: #ffffff;
         font-weight: bold;
-        text-align:center;
+        text-align: center;
 
         background-color: #81b3d2;
       }
 
       .item .btn-more{
         width:110px;
-        padding: 0;
+        padding: 4px 0;
       /* special for IE11 */
       }
 
