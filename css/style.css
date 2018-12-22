@@ -55,6 +55,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
 }
+
 .header-top{
   position: relative;
 }
@@ -114,10 +115,16 @@ input[type="radio"].visually-hidden {
   margin-left: 72px;
 }
 
-.main-menu-items li:first-child,
-.main-menu-items li:nth-child(2){
+.main-menu-items li:nth-child(-n+2){
   text-align: left;
+  padding-left:0;
 }
+
+/* .main-menu-items li:not(:first-child),
+.main-menu-items li:not(:last-child){
+margin-right: 50px;
+
+} */
 
 .main-menu-items li:nth-child(2){
   margin-right: 50px;
@@ -127,8 +134,7 @@ input[type="radio"].visually-hidden {
   margin-left: 50px;
 }
 
-.main-menu-items li:nth-child(3),
-.main-menu-items li:last-child{
+.main-menu-items li:nth-last-child(-n+2){
   text-align: right;
 }
 
@@ -1231,8 +1237,6 @@ button[name="number-mynus"]:active::before{
   text-decoration-style: dotted;
   -webkit-text-decoration-color: #81b3d2;
   text-decoration-color: #81b3d2;
-
-  /* outline: none; */
 }
 
 .sorting-link:hover,
@@ -1300,9 +1304,9 @@ button[name="number-mynus"]:active::before{
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1315,8 +1319,19 @@ button[name="number-mynus"]:active::before{
   height: 90px;
 }
 
+.info-block{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
 .info{
   padding-top: 25px;
+  padding-bottom: 25px;
+  width: 300px;
 }
 
 .item-row{
@@ -1341,6 +1356,10 @@ button[name="number-mynus"]:active::before{
   min-width: 110px;
   margin:0;
   margin-right: 6px;;
+}
+
+.item-tipe{
+  width: 110px;
 }
 
 .item .item-name{
@@ -1378,7 +1397,7 @@ button[name="number-mynus"]:active::before{
   padding-right: 17px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-right: 6px;
+  margin-right: 5px;
   min-width: 110px;
 
   color: #ffffff;
@@ -1389,7 +1408,7 @@ button[name="number-mynus"]:active::before{
 }
 
 .item .btn-more{
-  width:110px;
+  width: 110px;
   padding: 4px 0;
 }
 
@@ -1419,13 +1438,9 @@ button[name="number-mynus"]:active::before{
   background-color: #503e33;
 }
 
-.item .rating{
-
-
+.rating{
   display:-webkit-box;
-
   display:-ms-flexbox;
-
   display:flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1433,6 +1448,9 @@ button[name="number-mynus"]:active::before{
   flex-direction: column;
   -ms-flex-line-pack: justify;
   align-content: space-between;
+  padding-top: 29px;
+  padding-right: 74px;
+  max-width: 120px;
 
 }
 
