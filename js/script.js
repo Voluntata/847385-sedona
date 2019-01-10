@@ -8,11 +8,14 @@ var childsNumber = searchForm.querySelector("[name=childs]");
 var isStorageSupport = true;
 var storage = "";
 
+if ("script") {
+  searchForm.classList.add("search-none")};
+
 try {
   storage = localStorage.getItem("adultsNumber");
 } catch (err) {
   isStorageSupport = false;
-}
+};
 
 searchButton.addEventListener("click", function (evt) {
    evt.preventDefault()
@@ -34,7 +37,7 @@ searchForm.addEventListener("submit", function (evt) {
   alert("Укажите даты заезда-выезда и количество человек");
    evt.preventDefault();
  }
- 
+
  localStorage.setItem("arrivalDate", arrivalDate.value);
  localStorage.setItem("departureDate", departureDate.value);
  localStorage.setItem("adultsNumber", adultsNumber.value);
