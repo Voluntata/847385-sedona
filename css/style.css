@@ -904,11 +904,8 @@ button[name="number-mynus"]:active::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding: 27px 72px 10px 72px;
 
   color: #ffffff;
@@ -937,18 +934,6 @@ button[name="number-mynus"]:active::before {
 
 .filters li {
   list-style: none;
-}
-
-.filter-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 400px;
-
-  color: #ffffff;
 }
 
 .filter-option {
@@ -1000,8 +985,9 @@ button[name="number-mynus"]:active::before {
   background-image: url("../img/checkbox-on-2.svg");
 }
 
-.filter-range {
+fieldset.filter-range {
   width: 318px;
+  margin-left: auto;
 
   text-transform: uppercase;
   color: #ffffff;
@@ -1142,14 +1128,9 @@ button[name="number-mynus"]:active::before {
 }
 
 .sorting {
-  position: relative;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
@@ -1224,9 +1205,8 @@ button[name="number-mynus"]:active::before {
 }
 
 .sorting-column.arrows {
-  position: absolute;
-  top: 35px;
-  right: 74px;
+  margin-right: 75px;
+  margin-left: auto;
 }
 
 .arrow:hover path,
@@ -1280,9 +1260,6 @@ button[name="number-mynus"]:active::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1426,6 +1403,7 @@ button[name="number-mynus"]:active::before {
   -ms-flex-align: end;
   align-items: flex-end;
   max-width: 120px;
+  margin-left: auto;
   padding-top: 29px;
   padding-right: 74px;
 }
